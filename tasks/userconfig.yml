@@ -53,6 +53,7 @@
       user: "{{ item.name }}"
       key: "{{ lookup('file', ssh_user_key_loc + '/' + item2 + '.pub') }}"
       path: "{{ key_path }}"
+      key_options: "{{ item.key_options }}"
     with_items: "{{ item.authorized_keys }}"
     loop_control:
       loop_var: item2

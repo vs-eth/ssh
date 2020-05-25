@@ -78,6 +78,7 @@ sshd_additional_user_cfg: []
 #    key_path: ""
 #    k5login:
 #      - maxf@EXAMPLE.ORG
+#    key_options: ""
 
 # Replace the distribution-provided moduli with custom ones
 sshd_replace_moduli: False
